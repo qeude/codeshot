@@ -2,6 +2,7 @@
 	--light-grey: hsl(30, 12%, 97%);
 	--darker-grey: hsl(30, 12%, 77%);
     --editor-background: rgba(0, 0, 0, 0.7);
+    --background: #040404;
     --control-close-background-color: #ff605c;
     --control-minimize-background-color: #ffbd44;
     --control-maximize-background-color: #00ca4e;

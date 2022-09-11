@@ -27,22 +27,18 @@ final public class DismissableUIHostingController<Content: View>: UIHostingContr
   }
 }`);
 const options = {
-  mode: "swift", // Language mode
-  theme: "xcode-dark", // Theme
-  lineNumbers: false, // Show line number
-  smartIndent: true, // Smart indent
-  indentUnit: 2, // The smart indent unit is 2 spaces in length
-  foldGutter: true, // Code folding
-  styleActiveLine: true, // Display the style of the selected row
+  mode: "swift",
+  theme: "xcode-dark",
+  lineNumbers: false,
+  smartIndent: true,
+  indentUnit: 2,
+  foldGutter: true,
+  styleActiveLine: true,
 };
 </script>
 
 <template>
-  <CodeMirror
-    :options="options"
-    v-model:value="code"
-    placeholder="test placeholder"
-  />
+  <CodeMirror :options="options" v-model:value="code" />
 </template>
 
 <style lang="scss">

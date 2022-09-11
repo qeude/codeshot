@@ -5,21 +5,30 @@ import Editor from "../components/Editor.vue";
 <template>
   <main class="container">
     <div class="content">
-      <div class="window">
-        <div class="window-header">
-          <div class="controls">
-            <div class="control close"></div>
-            <div class="control minimize"></div>
-            <div class="control maximize"></div>
+      <div class="background">
+        <div class="window">
+          <div class="window-header">
+            <div class="controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
           </div>
+          <Editor />
         </div>
-        <Editor />
       </div>
     </div>
   </main>
 </template>
 
 <style lang="scss">
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
 .content {
   flex: 1;
   display: flex;
@@ -27,18 +36,21 @@ import Editor from "../components/Editor.vue";
   justify-content: center;
 }
 
-.container {
+.background {
   background-color: #7c01ff;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 200px;
+  width: 90%;
+  border-radius: 12px;
 }
 
 .window {
   border-radius: 12px;
   background: rgba(0, 0, 0, 0.7);
-  width: 80%;
   padding: 16px;
+  width: 100%;
 
   .window-header {
     display: grid;
