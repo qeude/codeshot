@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "codemirror-editor-vue3": "^2.1.7",
+    "pinia": "^2.0.22",
     "sass": "^1.54.9",
     "vue": "^3.2.37"
   },
